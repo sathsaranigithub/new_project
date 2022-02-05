@@ -1,0 +1,342 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: white;
+}
+
+nav {
+  background: rgb(4, 83, 4);
+  height: 80px;
+  width: 100%;
+}
+
+label.logo {
+  color: white;
+  font-size: 32px;
+  line-height: 80px;
+  padding: 0 40px;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+a.active,
+a:hover {
+  background: green;
+  transition: 0.5s;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+.header {
+  height: 95vh;
+  background-image: linear-gradient(
+      to right,
+      rgba(8, 114, 8, 0.83),
+      rgba(255, 255, 0, 0.8)
+    ),
+    url(./img/1.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+
+  clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+}
+.logo-box {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+
+.logo {
+  height: 35px;
+}
+.logo:hover {
+  animation: logoRotate 2s ease-out;
+}
+.text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  line-height: 60px;
+}
+.heading1 {
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.heading-main {
+  display: block;
+  font-size: 60px;
+  font-weight: 400;
+  letter-spacing: 30px;
+
+  animation-name: moveInLeft;
+  animation-duration: 3s;
+}
+.heading-sub {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 21px;
+
+  animation-name: moveInRight;
+  animation-duration: 3s;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  80% {
+    transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  80% {
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes logoRotate {
+  0% {
+    opacity: 0;
+    transform: translateX(0) rotate(-80deg);
+  }
+  80% {
+    transform: translateX(0) rotate(40deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes moveInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 2px 35px;
+  display: inline-block;
+  border-radius: 200px;
+  transition: all 0.2s;
+
+  animation: moveInDown 2s ease-out 0.5s;
+}
+.btn-background {
+  background-color: darkgreen;
+  color: white;
+}
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  background-color: green;
+}
+
+@media (max-width: 858px) {
+  .main {
+    padding: 20px;
+  }
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    height: 100vh;
+    background: darkolivegreen;
+    top: 80px;
+    left: 100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  a.hover,
+  a.active {
+    background: none;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+  label.logo {
+    font-size: 27px;
+    padding-left: 25px;
+  }
+}
+
+@media (max-width: 378px) {
+  label.logo {
+    font-size: 25px;
+    padding-left: 30px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+  main section div h2 {
+    font-size: 27px;
+  }
+  .home-flex {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+  .main {
+    padding: 0;
+  }
+}
+@import url("https://fonts.googleapis.com/css?family=pacifico");
+
+.xop-secton {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 6% 2%;
+}
+
+.xop-grid {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  width: 100%;
+}
+.xop-grid::after {
+  clear: both;
+}
+
+.xop-grid:after,
+.xop-box::before {
+  content: "";
+  display: table;
+}
+
+.xop-grid li {
+  width: 190px;
+  height: 125px;
+  display: inline-block;
+  margin: 10px;
+}
+
+.xop-box {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  cursor: pointer;
+  border-radius: 10px;
+  -webkit-transition: 0.3s ease-in-out, -webkit-transform 0.3 ease-in-out;
+  -moz-transition: 0.3s ease-in-out, -moz-transform 0.3s ease-in-out;
+  transition: 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.xop-box:hover {
+  transform: scale(1.05);
+}
+.xop-img-1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),
+    url(img/2.jpg);
+}
+.xop-img-2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),
+    url(img/3.png);
+}
+.xop-img-3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),
+    url(img/4.jpg);
+}
+.xop-img-4 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),
+    url(img/5.jpg);
+}
+.xop-img-5 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),
+    url(img/6.jpg);
+}
+
+.xop-info {
+  position: absolute;
+  width: inherit;
+  height: inherit;
+}
+
+.xop-info h3 {
+  font-family: "pacifico", cursive;
+  font-weight: 400;
+  color: chartreuse;
+  font-size: 42px;
+  margin: 0 30px;
+  padding: 100px 0 0 0;
+  line-height: 1.5;
+}
+
+.xop-info p {
+  font-family: "source sans pro", sans-serif;
+  color: "chartreuse";
+}
