@@ -1,4 +1,4 @@
-* {
+*  {
   padding: 0;
   margin: 0;
   text-decoration: none;
@@ -7,9 +7,9 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 400;
-  font-size: 16px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 300;
+  font-size: 17px;
   line-height: 1.7;
   color: white;
 }
@@ -65,20 +65,53 @@ a:hover {
 #check {
   display: none;
 }
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.img-2 {
+  width: 480px;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  
+}
+
+.body {
+  height: 600vh;
+  background-image: linear-gradient(
+     
+      rgba(8, 114, 8, 0.83),
+      rgba(36, 117, 4, 0.8)
+    ),
+    url(./img/white.webp);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+
+ 
+}
 
 .header {
-  height: 95vh;
+  height: 90vh;
   background-image: linear-gradient(
       to right,
       rgba(8, 114, 8, 0.83),
       rgba(255, 255, 0, 0.8)
     ),
-    url(./img/1.jpg);
+    url(./img/elephant.jpg);
   background-size: cover;
   background-position: center;
   position: relative;
 
-  clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+  
 }
 .logo-box {
   position: absolute;
@@ -92,6 +125,15 @@ a:hover {
 .logo:hover {
   animation: logoRotate 2s ease-out;
 }
+
+.text-box2 {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  text-align: center;
+  line-height: 20px;
+}
+
 .text-box {
   position: absolute;
   top: 40%;
@@ -106,7 +148,7 @@ a:hover {
 }
 .heading-main {
   display: block;
-  font-size: 60px;
+  font-size: 80px;
   font-weight: 400;
   letter-spacing: 30px;
 
@@ -117,10 +159,8 @@ a:hover {
   display: block;
   font-size: 20px;
   font-weight: 700;
-  letter-spacing: 21px;
-
-  animation-name: moveInRight;
-  animation-duration: 3s;
+  text-underline-position: below;
+  
 }
 
 @keyframes moveInLeft {
@@ -252,91 +292,4 @@ a:hover {
   .main {
     padding: 0;
   }
-}
-@import url("https://fonts.googleapis.com/css?family=pacifico");
-
-.xop-secton {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 6% 2%;
-}
-
-.xop-grid {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-align: center;
-  width: 100%;
-}
-.xop-grid::after {
-  clear: both;
-}
-
-.xop-grid:after,
-.xop-box::before {
-  content: "";
-  display: table;
-}
-
-.xop-grid li {
-  width: 190px;
-  height: 125px;
-  display: inline-block;
-  margin: 10px;
-}
-
-.xop-box {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  cursor: pointer;
-  border-radius: 10px;
-  -webkit-transition: 0.3s ease-in-out, -webkit-transform 0.3 ease-in-out;
-  -moz-transition: 0.3s ease-in-out, -moz-transform 0.3s ease-in-out;
-  transition: 0.3s ease-in-out, transform 0.3s ease-in-out;
-}
-
-.xop-box:hover {
-  transform: scale(1.05);
-}
-.xop-img-1 {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),
-    url(img/2.jpg);
-}
-.xop-img-2 {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),
-    url(img/3.png);
-}
-.xop-img-3 {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),
-    url(img/4.jpg);
-}
-.xop-img-4 {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),
-    url(img/5.jpg);
-}
-.xop-img-5 {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),
-    url(img/6.jpg);
-}
-
-.xop-info {
-  position: absolute;
-  width: inherit;
-  height: inherit;
-}
-
-.xop-info h3 {
-  font-family: "pacifico", cursive;
-  font-weight: 400;
-  color: chartreuse;
-  font-size: 42px;
-  margin: 0 30px;
-  padding: 100px 0 0 0;
-  line-height: 1.5;
-}
-
-.xop-info p {
-  font-family: "source sans pro", sans-serif;
-  color: "chartreuse";
 }
