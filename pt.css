@@ -1,0 +1,118 @@
+*{
+    margin:0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  background-image:url("i7.jpg");
+background-repeat:no-repeat;
+background-size: cover;
+
+
+margin0:0;
+padding:0;
+  
+}
+
+
+
+
+a.active,a:hover{
+    color: green;
+    transition: 0.5s;
+}
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+      display: none;
+  }
+
+  @media (max-width:768px) {
+      label.logo{
+          font-size: 25px;
+          padding-left: 30px;
+      }
+      nav ul li a{
+          font-size: 16px;
+      }
+      
+  }
+
+  @media (max-width:858px) {
+      .checkbtn{
+          display: block;
+      }
+      ul{
+        position: fixed;
+        z-index: 2;
+        width: 100%;
+        height: 100vh;
+        background: darkolivegreen;
+        top: 80px;
+        left: 100%;
+        text-align: center;
+        transition: all 0.5s;
+      }
+      
+      a:hover,a.active{
+          background-color: none;
+          color: #a1a321;
+      }
+      #check:checked~ul{
+          left:0
+      }
+      
+  }
+
+
+
+div{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    font-weight: bold;
+    width: 100%;
+    
+    flex-direction: column;
+    
+}
+
+h2{
+    font-size: 30px;
+    text-align: center;
+    background:rgb(100, 90, 10);
+    padding: 5px 15px;
+    border-radius: 10px;
+}
+
+h1{
+    font-size: 45px;
+    background:rgb(140, 180, 0);
+    padding: 6px 20px;
+    border-radius: 14px;
+    text-align: left;
+
+}
+
+
+
+
+p::first-letter {
+   
+  }
+.detail{
+    color: rgb(163, 154, 154);
+}
