@@ -139,3 +139,35 @@ body {
 h2 {
   text-align: center;
 }
+.help-2 {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 170px;
+  margin-bottom: 100px;
+  margin-top: 250px;
+}
+.help-g {
+  display: flex;
+  justify-content: center;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+  width: 80%;
+}
+.grid-item {
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 12px;
+}
+.grid-item img {
+  width: 100%;
+  transition: 0.5s all ease-in-out;
+}
+.grid-item:hover img {
+  transform: scale(1.5);
+}
