@@ -135,7 +135,6 @@ body {
   transform: translateY(-3px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
-
 h2 {
   text-align: center;
 }
@@ -151,6 +150,17 @@ h2 {
 .help-g {
   display: flex;
   justify-content: center;
+}
+.ab {
+  text-align: center;
+}
+.unoderlist {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.listitem {
+  width: 75%;
 }
 .grid-container {
   display: grid;
@@ -170,4 +180,17 @@ h2 {
 }
 .grid-item:hover img {
   transform: scale(1.5);
+}
+.lmessage {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.lmessage-1 {
+  width: 90%;
+}
+.pimg {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
 }
