@@ -151,6 +151,14 @@ h2 {
   display: flex;
   justify-content: center;
 }
+.unoderlist {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.listitem {
+  width: 75%;
+}
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto;
