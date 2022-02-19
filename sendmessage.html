@@ -1,32 +1,40 @@
-<html>
-    <head>
-        <title>
-            abc
-        </title>
-        <link rel="stylesheet" href="sendmessage.css">
-
-    </head>
-    <body>
-        <div class="contact-title">
-            <h1>first step to protect mother of nature</h1>
-            <h2>we are always ready to serve you!</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive contact form</title>
+    <link rel="stylesheet" href="sendmessage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    >
+</head>
+<body>
+    <!--ALTER MESSAGE-->
+    <!--<div class="alert-success">
+        <span>Message Sent! Exactly We Will Get Step For This, Thank Your Respond</span>
+    </div>-->
+    <!--<div class="alert-error">
+        <span> something went wrong! please try again</span>
+    </div>-->
+    <div class="contact-section">
+        <div class="contact-info">
+            <div><i class="fas fa-map-marker-alt"></i>Address, City, Country</div>
+            <div><i class="fas fa-envelope"></i>contact@email.com</div>
+            <div><i class="fas fa-phone"></i>+94 011 005 009</div>
+            <div><i class="fas fa-clock"></i>MON -FRI 8.00 AM TO 5.00 PM</div>
         </div>
         <div class="contact-form">
-            <form id="contact-form" method="post" action="">
-                <input name="name" type="text" class="form-control" placeholder="your Name"required>
-                <br>
-                <input name="email" type="email" class="form-control" placeholder="your email"required>
-                <br>
-                <textarea name="message"  class="form-control" rows="4" placeholder="Message" required></textarea>
-                <br>
-                  
-                <input type="submit" class="form-control submit" value="SEND MESSAGE">
-
-
-
-
-
-            </form>
+            <h2>
+                contact us
+            </h2>
+            <form class="contact" action="" method="post">
+            <input type="text" name="name" class="text-box" placeholder="your name" required>
+            <input type="email" name="email" class="text-box" placeholder="your email" required>
+            <textarea name="message" rows="5" placeholder="your message"required></textarea>
+            <input type="submit" name="submit" class="send-btn" value="send">
+        </form>
         </div>
-    </body>
+    </div>
+</body>
 </html>
