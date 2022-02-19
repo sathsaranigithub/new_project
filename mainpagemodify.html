@@ -113,16 +113,7 @@ section{
 	border-radius: 8px;
 	padding: 20px;
 }
-.comment {
-	display: block;
 
-}
-.commentClicked {
-	min-height: 0px;
-	border: 1px solid rgb(56, 4, 4);
-	border-radius: 5px;
-	padding: 5px 10px
-}
 .container textarea {
 	width: 100%;
 	border: none;
@@ -691,29 +682,7 @@ economic assets and livelihood opportunities.
                 </div>
                 
                     <h1 class="credit"> | all rights reserved! </h1>
-                   <section id="app">
-                        <div class="container">
-                          <div class="row">
-                            <div class="col-6">
-                              <div class="comment">
-                            <p v-for="items in item" v-text="items"></p>
-                              </div><!--End Comment-->
-                              </div><!--End col -->
-                              </div><!-- End row -->
-                          <div class="row">
-                            <div class="col-6">
-                          <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()"></textarea>
-                              <button v-on:click="addItem()" class='primaryContained float-right' type="submit">Add Comment</button>
-                            </div><!-- End col -->
-                          </div><!--End Row -->
-                        </div><!--End Container -->
-                      </section><!-- end App -->
-                      <br/>
-                    </section>
-                   </body>
-                <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-                <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
-                
+                  
 
 
 
