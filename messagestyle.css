@@ -166,13 +166,20 @@ h2 {
   display: grid;
   grid-template-columns: auto auto auto;
   padding: 10px;
-  width: 80%;
+  width: 85%;
 }
 .grid-item {
   overflow: hidden;
   margin: 0 auto;
   padding: 10px;
   border-radius: 12px;
+}
+.grid-item p {
+  position: absolute;
+  width: 25%;
+  text-align: center;
+  z-index: 0;
+  color: #ffffff;
 }
 .grid-item img {
   width: 100%;
