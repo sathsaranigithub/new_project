@@ -201,3 +201,16 @@ h2 {
   justify-content: space-between;
   width: 60%;
 }
+.backimg {
+  height: 450px;
+  background-image: url(./img/description.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.listitem {
+  background-image: url(./img/list.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
