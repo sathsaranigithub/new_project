@@ -181,11 +181,7 @@ button.primaryContained:hover {
         height: 44px;
         color:brown;
       }
-      #img.button{
-         color:#58240c;
-         
-        
-           }
+     
            #myDIV {
   width: 350px;
   height: 200px;
@@ -283,29 +279,7 @@ text-align:left;
 
 
     </style>
-         <script type = "text/javascript">
-            function displayNextImage() {
-                x = (x === images.length - 1) ? 0 : x + 1;
-                document.getElementById("img").src = images[x];
-            }
-  
-            function displayPreviousImage() {
-                x = (x <= 0) ? images.length - 1 : x - 1;
-                document.getElementById("img").src = images[x];
-            }
-  
-            function startTimer() {
-                setInterval(displayNextImage, 2000);
-            }
-  
-            var images = [], x = -1;
-            images[0] = "three.jpeg" ;
-            images[1] = "nine.png";
-            images[2] = "six.jpeg";
-            images[3] = "twelve.jpeg";
-           
-            images[4] = "a.jpg";
-           </script> 
+         
     </head>
         <body>
             
@@ -363,17 +337,7 @@ text-align:left;
 </header>
                    
                    <hr/>
-                    <body onload = "startTimer()">
-                        <img id="img" src="startpicture.jpg"/>
-                        <br/>
-                        <button type="button" onclick="displayPreviousImage()">Previous</button>
-                       <br/>
-                        <button type="button" onclick="displayNextImage()">Next</button>
-                 
-                 
-                    </body>
-            <br/><br/><br/>
-   <hr/>
+                    
        <marquee>
  
         <img  src="first.jpg"/>
