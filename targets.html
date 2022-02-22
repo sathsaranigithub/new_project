@@ -1,0 +1,197 @@
+<html>
+
+<head>
+<style>
+    body{
+        background-color:lightgreen;
+    }
+    
+.topic{
+    background-color:lightgreen;
+}
+.th01{
+    background-color:rgb(52, 212, 46);
+    border:7px darkgreen dotted;
+    
+}
+.grid-item img {
+  width: 50%;
+  transition: 0.5s all ease-in-out;
+  display:flex;
+}
+.grid-item:hover img {
+  transform: scale(1.5);
+}
+.grid-item {
+  overflow: hidden;
+  margin: 5px;
+  padding: 40px;
+  border-radius: 12px;
+  display:flex;
+  justify-content: space-between;
+  width: 90%;
+  border:5px dotted blue;
+  background-color:rgb(14, 14, 61);
+}
+
+.three{
+    float:left;
+}
+
+
+</style>
+</head>
+<body>
+<br>
+
+
+    <div class="topic">
+        <center><b><h1 id="demo" onmouseenter="mouseEnter()" onmouseleave="mouseLeave()">WHAT IS SDG-15?</h1></b> 
+        </center><hr/></div>
+
+        <div id="myDIV"></div>
+        
+  <script>   function mouseEnter() {
+     document.getElementById("demo").style.color = "green";
+   }
+   
+   function mouseLeave() {
+     document.getElementById("demo").style.color = "blue";
+   }</script>   
+    <br/>
+    <script type = "text/javascript">
+      function displayNextImage() {
+          x = (x === images.length - 1) ? 0 : x + 1;
+          document.getElementById("img").src = images[x];
+      }
+  
+      function displayPreviousImage() {
+          x = (x <= 0) ? images.length - 1 : x - 1;
+          document.getElementById("img").src = images[x];
+      }
+  
+      function startTimer() {
+          setInterval(displayNextImage, 2000);
+      }
+  
+      var images = [], x = -1;
+      images[0] = "three.jpeg" ;
+      images[1] = "nine.png";
+      images[2] = "six.jpeg";
+      images[3] = "twelve.jpeg";
+     
+      images[4] = "a.jpg";
+     </script> 
+     <center>
+                         <body onload = "startTimer()">
+                          <img id="img" src="startpicture.jpg"/>
+                          <br/>
+                        
+                   
+                      </body>
+</center>
+
+<hr/>
+<br/>
+<br/>
+<br/>
+
+<div class="th01">
+    <center><p><h1>Targets</h1></p></center>
+
+</div>
+<br/>
+<br/>
+<br/>
+<div class="grid-item">
+    <img src="one.png"  style="width:190px;height:240px;">
+   
+   
+    <br><br>
+    <br><br>
+    
+    <img src="twoo.jpeg"  style="width:230px;height:220px;">
+   
+   
+    <br><br>
+    
+    
+   <img src="thre.png"  style="width:160px;height:220px;">
+   
+    
+   <br><br></div>
+    
+    
+    </p>
+  
+    <hr/><br><br>
+    <div class="grid-item">
+   
+    <img src="c.jpeg"  style="width:160px;height:190px;">
+    
+        <br><br>
+    
+    
+    
+    
+        <br><br>
+    
+    
+    <img src="d.jpeg"  style="width:160px;height:190px;">
+    
+    <br><br>
+    
+    <br><br>
+    
+    <img src="g.png"  style="width:160px;height:190px;">
+    <br><br>
+    
+    
+    
+    <br>
+    <br><br><br><br>
+    </div>
+    
+    <br/>
+    <div class="grid-item">
+    <img src="h.jpeg"  style="width:160px;height:190px;">
+    <br><br>
+
+
+    <img src="i.jpeg"  style="width:160px;height:190px;">
+    <br><br>
+    
+    <img src="j.jpeg"  style="width:160px;height:190px;">
+    <br><br>
+
+    <img src="k.jpeg"  style="width:160px;height:190px;">
+    <br><br>
+
+    </div>
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
