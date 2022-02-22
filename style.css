@@ -549,8 +549,8 @@ transform: translateY(-10px);
 footer .social_icon li a
 
 {
-  font-size: 1.2em;
-  color: #fff;
+  font-size: 2.2em;
+  color: rgb(205, 255, 111);
   margin: 0 10px;
   display: inline-block;
   text-decoration: none;
