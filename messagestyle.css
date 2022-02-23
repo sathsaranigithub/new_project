@@ -10,6 +10,9 @@ body {
   line-height: 1.7;
   color: #000;
 }
+a {
+  text-decoration: none;
+}
 nav {
   background: rgb(4, 83, 4);
   height: 80px;
