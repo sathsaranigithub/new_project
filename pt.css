@@ -10,12 +10,11 @@ body{
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7;
-  background-image:url("img/i7.jpg");
+  background-image:url("i7.jpg");
 background-repeat:no-repeat;
 background-size: cover;
 background-position: center;
-position: relative;
-
+  position: relative;
 
 
 margin0:0;
@@ -60,6 +59,19 @@ a.active,a:hover{
   #check{
       display: none;
   }
+.header {
+  height: 95vh;
+  background-image: linear-gradient(
+      to right,
+      rgba(8, 114, 8, 0.83),
+      rgba(255, 255, 0, 0.8)
+    ),
+    url(./img/5.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+
+  clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
 }
 .logo-box {
   position: absolute;
@@ -94,26 +106,6 @@ a.active,a:hover{
   animation-name: moveInLeft;
   animation-duration: 3s;
 }
-
-
-
-
-a.active,a:hover{
-    color: green;
-    transition: 0.5s;
-}
-.checkbtn {
-    font-size: 30px;
-    color: white;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
-  }
-  #check{
-      display: none;
-  }
 .heading-sub {
   display: block;
   font-size: 20px;
@@ -193,7 +185,6 @@ a.active,a:hover{
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-
   @media (max-width:768px) {
       label.logo{
           font-size: 25px;
@@ -270,6 +261,7 @@ p::first-letter {
 .detail{
     color: rgb(163, 154, 154);
 }
+
 /* FOOTER CSS CODE START HERE  */
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 footer{
