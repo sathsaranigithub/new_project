@@ -114,6 +114,84 @@ a.active,a:hover{
   #check{
       display: none;
   }
+.heading-sub {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 21px;
+
+  animation-name: moveInRight;
+  animation-duration: 3s;
+}
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  80% {
+    transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  80% {
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes logoRotate {
+  0% {
+    opacity: 0;
+    transform: translateX(0) rotate(-80deg);
+  }
+  80% {
+    transform: translateX(0) rotate(40deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes moveInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 2px 35px;
+  display: inline-block;
+  border-radius: 200px;
+  transition: all 0.2s;
+
+  animation: moveInDown 2s ease-out 0.5s;
+}
+.btn-background {
+  background-color: #ffffff;
+  color: #777;
+}
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
 
 
   @media (max-width:768px) {
